@@ -1,0 +1,51 @@
+{
+  "name": "estudiar-cookies-y-sessions-en-expressjs-alberto-diego",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "generar-gitbook": "node scripts/gitbook.js",
+    "push-to-gh": "node scripts/gh.js",
+    "deploy-gitbook-ghp": "node scripts/deploy_gitbook_ghp.js",
+    "deploy-gitbook-gb": "node scripts/deploy_gitbook_gb.js",
+    "server-express": "node scripts/server.js",
+    "deploy-iaas": "cd scripts && node iaas2.js",
+    "build": "npm install && npm i gitbook-cli && npm run generar-gitbook",
+    "deploy": "npm run build && npm run deploy-gitbook-ghp && npm run deploy-gitbook-gb",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ULL-ESIT-DSI-1617/estudiar-cookies-y-sessions-en-expressjs-diego-alberto-35l1.git",
+    "urlgb": "https://git.gitbook.com/alu0100825510/estudiar-las-cookies-y-sessions-en-expressjs.git",
+    "name": "estudiar-cookies-y-sessions-en-expressjs-alberto-diego"
+  },
+  "ssh": {
+    "host": "10.6.129.237",
+    "user": "usuario",
+    "port": "8086"
+  },
+  "author": "Alberto G Ruiz Pérez, Diego Álvarez Padrón",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^1.4.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "fs-extra": "^0.22.1",
+    "fs-promise": "^2.0.0",
+    "gh-pages": "^0.3.1",
+    "gitbook": "^2.1.0",
+    "gitbook-cli": "^0.3.4",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-shell": "^0.5.2",
+    "simple-git": "^1.66.0",
+    "ssh-exec": "^2.0.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
