@@ -47,4 +47,9 @@
   * [Routing Guide](routing_guide/direccionamiento.md)
   * [Middleware](middleware/middleware.md)
   * [Router API Documentation](router/router.md)
-  
+  * [Cookie Management API](cookie_management/cookie_management.md)
+  * [Cookie Module](cookie_module/cookie_module.md)
+  * [Http Cookies](http_cookies/http_cookies.md)
+  * [Query String](query_string/query_string.md)
+  * [Session auth with Express](session_auth/session_add.md)
+  * [Set Cookie](set_cookie/set_cookie.md)
