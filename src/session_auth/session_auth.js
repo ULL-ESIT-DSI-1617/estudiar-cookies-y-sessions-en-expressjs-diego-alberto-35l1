@@ -15,6 +15,7 @@ var auth = function(req, res, next) {
     return res.sendStatus(401);
 };
 
+
 app.get('/login', function (req, res) {
   if (!req.query.username || !req.query.password) {
     res.send('fallo inicio de sesion');
@@ -23,6 +24,9 @@ app.get('/login', function (req, res) {
     req.session.admin = true;
     res.send("logeado con exito!");
   }
+  else{
+    res.send('fallo inicio de sesion');
+  }
 });
 
 app.get('/logout', function (req, res) {
@@ -30,9 +34,9 @@ app.get('/logout', function (req, res) {
   res.send("cerrada sesión correctamente!");
 });
 
- 
+
 app.get('/content', auth, function (req, res) {
-    res.send("solo puede ver esto despues de haber iniciado sesion");
+    res.send(req.session.user + "solo puede ver esto despues de haber iniciado sesion");
 });
 
 app.listen(3000);
