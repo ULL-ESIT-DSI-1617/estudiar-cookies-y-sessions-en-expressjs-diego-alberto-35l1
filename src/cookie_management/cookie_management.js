@@ -4,7 +4,7 @@ var app = express();
 app.use(cookieParser());
 
 app.get('/cookie',function(req, res){
-     res.cookie(nombre_cookie , 'micookie').send('Cookie creada');
+     res.cookie('nombre_cookie' , 'micookie').send('Cookie creada');
 });
 
 app.get('/', function(req, res) {
@@ -12,8 +12,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/clearcookie', function(req,res){
-     clearCookie('micookie');
-     res.send('Cookie eliminada');
+     res.clearCookie('nombre_cookie').send('Cookie eliminada');
 });
 var server = app.listen(3000, function () {
 
