@@ -6,8 +6,5 @@ var app = express();
 
 app.use(express.static(path.resolve('gh-pages'))); //ponemos ruta por defecto relativa
 
-
-// escuchar
-app.listen(8086);
-
-console.log("Servidor Express escuchando en modo %s", app.settings.env + " por el puerto: 8086");
+var port = process.env.PORT || 8086;
+app.listen(port);
