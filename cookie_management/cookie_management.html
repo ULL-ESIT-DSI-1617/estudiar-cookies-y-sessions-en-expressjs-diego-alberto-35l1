@@ -651,9 +651,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.7" data-path="../http_cookies/http_cookies.md">
+        <li class="chapter " data-level="1.11.7" data-path="../http_cookies/httpcookies.html">
             
-                <span>
+                <a href="../http_cookies/httpcookies.html">
             
                     
                     Http Cookies
@@ -806,7 +806,7 @@ app.get(&apos;/cookie&apos;,function(req, res){
 <pre><code>res.cookie(name , &apos;value&apos;, {expire : new Date() + 9999});
 </code></pre><p>Las opciones de adici&#xF3;n de cookies se pueden establecer pasando un objeto como argumento que lleva configuraciones adicionales para las cookies. Por lo tanto, para establecer el tiempo de caducidad a las cookies, se puede enviar un objeto con expiraci&#xF3;n de propiedad que contiene el tiempo de caducidad en milisegundos.</p>
 <pre><code>res.cookie(name, &apos;value&apos;, {maxAge : 9999});
-</code></pre><h2 id="&#xBF;c&#xF3;mo-borrar-una-cookie-existente">&#xBF;C&#xF3;mo borrar una Cookie existente&quot;</h2>
+</code></pre><h2 id="&#xBF;c&#xF3;mo-borrar-una-cookie-existente">&#xBF;C&#xF3;mo borrar una Cookie existente?</h2>
 <p>Las cookies existentes se pueden eliminar f&#xE1;cilmente usando el m&#xE9;todo clearCookie, que acepta el nombre de la cookie que desea eliminar.</p>
 <pre><code>app.get(&apos;/clearcookie&apos;, function(req,res){
      clearCookie(&apos;cookie_name&apos;);
@@ -855,7 +855,7 @@ app.get(&apos;/cookie&apos;,function(req, res){
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Cookie Management API","level":"1.11.5","depth":2,"next":{"title":"Cookie Module","level":"1.11.6","depth":2,"path":"cookie_module/cookie_module.md","ref":"cookie_module/cookie_module.md","articles":[]},"previous":{"title":"Router API Documentation","level":"1.11.4","depth":2,"path":"router/router.md","ref":"router/router.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"cookie_management/cookie_management.md","mtime":"2017-03-14T18:01:20.660Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-14T18:07:34.183Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Cookie Management API","level":"1.11.5","depth":2,"next":{"title":"Cookie Module","level":"1.11.6","depth":2,"path":"cookie_module/cookie_module.md","ref":"cookie_module/cookie_module.md","articles":[]},"previous":{"title":"Router API Documentation","level":"1.11.4","depth":2,"path":"router/router.md","ref":"router/router.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"cookie_management/cookie_management.md","mtime":"2017-03-14T20:32:38.610Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-14T20:37:08.710Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
