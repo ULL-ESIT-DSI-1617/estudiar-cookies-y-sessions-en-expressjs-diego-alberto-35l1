@@ -79,7 +79,7 @@ Las opciones de adición de cookies se pueden establecer pasando un objeto como 
 res.cookie(name, 'value', {maxAge : 9999});
 ```
 
-## ¿Cómo borrar una Cookie existente?
+## ¿Cómo borrar una Cookie existente"
 
 Las cookies existentes se pueden eliminar fácilmente usando el método clearCookie, que acepta el nombre de la cookie que desea eliminar.
 ```
